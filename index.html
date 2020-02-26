@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google Tag Manager -->
+    <!--    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NJMHSH');</script>-->
+    <!-- End Google Tag Manager -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Analytics for online apps to view, create, convert, edit and save a variety of document and image formats like Word Processing, Excel Spreadsheets, PDF and a lot more ...">
+    <meta name="keywords" content="File Format Apps Analytics">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+    <link href="css/api-reference-home.css" rel="stylesheet" type="text/css" />
+	<title>Word, Spreadsheet and Other Online Apps Analytics</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/navigation-minify.css" rel="stylesheet" type="text/css" />
+    <link href="css/hp-nav.css" rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <script type='text/javascript' language="javascript" src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cms.admin.containerize.com/templates/asposeapp/css/asposeapp.css?v1.15" type="text/css" />
+<link rel="stylesheet" href="https://joomla-aspose.dynabic.com/templates/aspose/css/font-awesome.css" type="text/css" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://menu.containerize.com/Scripts/Containerize.Menu.min.js"></script>
+<link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+                $(".mobileanchor").removeAttr("href");
+            }
+        });</script>
+    <style type="text/css">
+        #footer {
+            bottom: 0 !important;
+        }
+
+        body {
+            background-image: none !important;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+        }
+
+        .noprint2 {
+            list-style: none outside none;
+        }
+
+        .bodycontent {
+            min-height: 400px;
+        }
+
+        h2, h3 {
+            padding-bottom: 5px;
+        }
+
+        .github-head {
+            background: url(img/header1.png) center center #439cda !important;
+            margin-top: 38px;
+            padding: 10px 15px;
+        }
+
+        .github-hd-section {
+            display: inline;
+            height: 200px;
+            text-align: center;
+            padding: 0px 0;
+            color: #fff;
+        }
+
+            .github-hd-section h1 {
+                font-size: 40px;
+                font-weight: bold;
+                font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+                margin: 15px 0 0px;
+            }
+	iframe {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		-moz-border-radius: 12px;
+		-webkit-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 4px 4px 14px #000;
+		-webkit-box-shadow: 4px 4px 14px #000;
+		box-shadow: 4px 4px 14px #000;
+		scrolling:no'
+	} 
+    </style>
+    <script type="text/javascript">
+        jQuery.noConflict();
+
+        jQuery(document).ready(function () {
+            $('.siteTop_ContentContainer').find("button").click(function () {
+                $("#navbar-button").toggleClass("topbutton");
+            });
+
+            jQuery('#userControls').load('http://www.aspose.com/Header/logininfo.aspx?ShowBlc=false');
+
+            $("#userControls img").each(function () {
+                $(this).attr('src', "img/transparent.png");
+            })
+
+
+        });
+
+    </script>
+</head>
+<body>   
+<div id='DynabicMenuInnerDiv'></div>
+<div class="container">
+<h1>File Format Apps Analytics</h1>
+<div id="table_gss">
+<div class="lastUpdated"></div>
+<div class="results"></div>
+
+<script>
+// ID of the Google Spreadsheet
+var spreadsheetID = "19sPIZCswXsfgrNIN_MyqN6wX6WySZXev09uHAS5T5hk";
+                      
+// Make sure it is public or set to Anyone with link can view 
+var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/values?alt=json"; 
+               
+var url1="https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/1/public/full?alt=json";
+/**       
+$.getJSON(url1, function(data) {
+        $('.results').prepend('<table border=1>');              
+    var entry = data.feed.entry;
+    
+	//$(entry).sort();
+                  
+    $(entry).each(function(){
+	$('.results').prepend('<tr>');
+    //make sure this matches your column labels when you change the source sheet
+    $('.results').prepend('<td>'+this.gsx$app.$t+'</td><td>'+this.gsx$alltimeviews.$t+'</td>+<td>'+this.gsx$daysviews.$t+'</td><td>'+this.gsx$daysviews_2.$t+'</td><td>'+this.gsx$daysviews_3.$t+'</td><td>'+this.gsx$yearviews.$t+'</td>');
+$('.results').prepend('</tr>');
+      });
+        $('.results').prepend('</table>');              
+    });
+**/
+$.getJSON(url1, function(data) {
+
+var entry = data.feed.entry;
+$('.lastUpdated').append('App Wise Pageviews (Last Updated: ' + entry[0].gsx$lastupdated.$t + ' UTC+00:00)');
+$('.results').append('<ul><li class="nav_l"><strong>App</strong></li><li class="nav_r"><strong>All Time Views</strong></li><li class="nav_r"><strong>7 Days Views</strong></li><li class="nav_r"><strong>30 Days Views</strong></li><li class="nav_r"><strong>90 Days Views</strong></li><li class="nav_r"><strong>1 Year Views</strong></li></ul>');
+
+$(entry).each(function(){
+$('.results').append('<ul><li class="nav_l">'+this.gsx$app.$t+'</li><li class="nav_r">'+this.gsx$alltimeviews.$t+'</li><li class="nav_r">'+this.gsx$daysviews.$t+'</li><li class="nav_r">'+this.gsx$daysviews_2.$t+'</li><li class="nav_r">'+this.gsx$daysviews_3.$t+'</li><li class="nav_r">'+this.gsx$yearviews.$t+'</li>');
+$('.results').append('</ul>');
+});
+});
+
+</script>
+</div>
+</div>
+    <div id='DynabicMenuFooter'></div>
+<script>
+LoadMenu("Aspose");
+</script>
+</body>
+</html>
